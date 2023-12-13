@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Library</title>
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+     body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #1e272e;
+    color: #ecf0f1;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to right, #ff6b6b, #6b6b6b);
+    color: #fff;
+}
+
+#book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+article {
+    background: #2c3e50;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #bdc3c7;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to right, #ff6b6b, #6b6b6b);
+    color: #fff;
+}
+
+/* Animated underline effect for h2 elements */
+h2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #3498db;
+    transition: width 0.3s;
+}
+
+h2:hover::after {
+    width: 100%;
+}
+        /* Additional styles for the search bar */
+        #search-bar {
+            margin: 20px;
+            padding: 10px;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RAMANA LIBRARY</h1>
+    </header>
+	 <input type="text" id="search-bar" placeholder="Search books">
+	
+  
+
+      <section id="bookList">
+   
+  </section>
+  
+        <!-- Book information will be added here -->
+        <article>
+            <h2>Letting Go 1</h2>
+            <p>Author:  Philip Roth 1</p>
+            <p>Year: 1999</p>
+        </article>
+
+        <article>
+            <h2>The Guide</h2>
+            <p>Author :R.K Narayan </p>
+            <p>Year: 1958</p>
+        </article>
+       <article>
+            <h2>indian philosophy</h2>
+            <p>Author: radhakrishna</p>
+            <p>Year: 1923</p>
+        </article>
+<article>
+            <h2>elephant in the womb</h2>
+            <p>Author: kalki</p>
+            <p>Year: 2021</p>
+        </article>
+<article>
+            <h2>the bench</h2>
+            <p>Author: Author 2</p>
+            <p>Year: 2020</p>
+        </article>
+<article>
+            <h2>Book Title 2</h2>
+            <p>Author: duchess of sussex</p>
+            <p>Year: 2021</p>
+        </article>
+<article>
+            <h2>whereabouts</h2>
+            <p>Author:lahiri</p>
+            <p>Year: 2018</p>
+        </article>
+<article>
+            <h2>9 Great Books About The Internet of Things (IoT)</h2>
+            <p>Author: samuel</p>
+            <p>Year: 2017</p>
+        </article>
+<article>
+           
+        <article>
+            <h2>The Great Gatsby</h2>
+            <p>Author: F. Scott Fitzgerald</p>
+            <p>Year: 1925</p>
+        </article>
+
+        <article>
+            <h2>To Kill a Mockingbird</h2>
+            <p>Author: Harper Lee</p>
+            <p>Year: 1960</p>
+        </article>
+
+        <article>
+            <h2>1984</h2>
+            <p>Author: George Orwell</p>
+            <p>Year: 1949</p>
+        </article>
+
+        <article>
+            <h2>The Catcher in the Rye</h2>
+            <p>Author: J.D. Salinger</p>
+            <p>Year: 1951</p>
+        </article>
+<article>
+    <h2>The Lord of the Rings Trilogy</h2>
+    <p>Author: J.R.R. Tolkien</p>
+    <p>Years: 1954-1955</p>
+</article>
+
+<article>
+    <h2>Jane Eyre</h2>
+    <p>Author: Charlotte Brontë</p>
+    <p>Year: 1847</p>
+</article>
+
+<article>
+    <h2>Pride and Prejudice</h2>
+    <p>Author: Jane Austen</p>
+    <p>Year: 1813</p>
+</article>
+
+<article>
+    <h2>One Hundred Years of Solitude</h2>
+    <p>Author: Gabriel García Márquez</p>
+    <p>Year: 1967</p>
+</article>
+
+<article>
+    <h2>The Handmaid's Tale</h2>
+    <p>Author: Margaret Atwood</p>
+    <p>Year: 1985</p>
+</article>
+
+<article>
+    <h2>Beloved</h2>
+    <p>Author: Toni Morrison</p>
+    <p>Year: 1987</p>
+</article>
+
+<article>
+    <h2>The God of Small Things</h2>
+    <p>Author: Arundhati Roy</p>
+    <p>Year: 1997</p>
+</article>
+
+<article>
+    <h2>The Time Traveler's Wife</h2>
+    <p>Author: Audrey Niffenegger</p>
+    <p>Year: 2003</p>
+</article>
+
+<article>
+    <h2>The Book Thief</h2>
+    <p>Author: Markus Zusak</p>
+    <p>Year: 2005</p>
+</article>
+
+<article>
+    <h2>All the Light We Cannot See</h2>
+    <p>Author: Anthony Doerr</p>
+    <p>Year: 2014</p>
+</article>
+<article>
+            <h2>The Hobbit</h2>
+            <p>Author: J.R.R. Tolkien</p>
+            <p>Year: 1937</p>
+        </article>
+
+        <article>
+            <h2>Fahrenheit 451</h2>
+            <p>Author: Ray Bradbury</p>
+            <p>Year: 1953</p>
+        </article>
+
+        <article>
+            <h2>Brave New World</h2>
+            <p>Author: Aldous Huxley</p>
+            <p>Year: 1932</p>
+        </article>
+<article>
+            <h2>The Road Not Taken</h2>
+            <p>Author: Robert Frost</p>
+            <p>Year: 1916</p>
+        </article>
+
+        <article>
+            <h2>The Alchemist</h2>
+            <p>Author: Paulo Coelho</p>
+            <p>Year: 1988</p>
+        </article>
+
+        <article>
+            <h2>The Art of War</h2>
+            <p>Author: Sun Tzu</p>
+            <p>Year: Ancient China</p>
+        </article>
+<article>
+    <h2>Getting Started with the Internet of Things</h2>
+    <p>Author: Cuno Pfister</p>
+    <p>Year: 2011</p>
+</article>
+
+<article>
+    <h2>Internet of Things: Architecture, Patterns, and Protocols</h2>
+    <p>Author: Olivier Hersent, David Boswarthick, Omar Elloumi</p>
+    <p>Year: 2012</p>
+</article>
+
+<article>
+    <h2>Building the Internet of Things: With Arduino and Raspberry Pi</h2>
+    <p>Author: Peter Waher</p>
+    <p>Year: 2014</p>
+</article>
+
+<article>
+    <h2>Designing the Internet of Things</h2>
+    <p>Author: Adrian McEwen, Hakim Cassimally</p>
+    <p>Year: 2014</p>
+</article>
+
+<article>
+    <h2>The Internet of Things: A Hands-On Approach</h2>
+    <p>Author: Arsheep Bahga, Vijay Madisetti</p>
+    <p>Year: 2015</p>
+</article>
+
+<article>
+    <h2>Mastering the Internet of Things: Design and Build Real-World Projects</h2>
+    <p>Author: Jonathan Wolpert</p>
+    <p>Year: 2017</p>
+</article>
+
+<article>
+    <h2>Building the Web of Things: With Examples in Python and JavaScript</h2>
+    <p>Author: Dominique Guinard, Vlad Trifa</p>
+    <p>Year: 2018</p>
+</article>
+
+<article>
+    <h2>Practical Internet of Things Security: Design, Implementation, and Assessment</h2>
+    p>Author: Brian Russell, Drew Van Duren, David G. Taylor</p>
+    <p>Year: 2019</p>
+</article>
+
+<article>
+    <h2>The Internet of Things: Applications, Challenges, and Opportunities</h2>
+    <p>Author: Luigi Atzori, Antonio Iera, Giacomo Morabito</p>
+    <p>Year: 2022</p>
+</article>
+
+<article>
+    <h2>The Future of the Internet of Things: Opportunities, Challenges, and Trends</h2>
+    <p>Author: Omar Elloumi, Mohamed Ben Alaya</p>
+    <p>Year: 2023</p>
+</article>
+<article>
+    <h2>C Programming Language (K&R)</h2>
+    <p>Author: Brian Kernighan & Dennis Ritchie</p>
+    <p>Year: 1988</p>
+<article>
+    <h2>The C Programming Absolute Beginner's Guide</h2>   
+    <p>Author: Greg Perry & Dean Miller</p>
+    <p>Year: 2013</p>
+</article>
+
+<article>
+    <h2>Head First C</h2>
+    <p>Author: David Griffiths & Dawn Griffiths</p>
+    <p>Year: 2011</p>
+    
+</article>
+
+<article>
+    <h2>Expert C Programming: Deep C Secrets</h2>
+    <p>Author: Peter Van der Linden</p>
+    <p>Year: 2014</p>
+</article>
+    
+<article>
+            <h2>Principia Mathematica</h2>
+            <p>Author: Isaac Newton</p>
+            <p>Year: 1687</p>
+        </article>
+
+        <article>
+            <h2>The Elements</h2>
+            <p>Author: Euclid</p>
+            <p>Year: Circa 300 BC</p>
+        </article>
+
+        <article>
+            <h2>A Brief History of Time</h2>
+            <p>Author: Stephen Hawking</p>
+            <p>Year: 1988</p>
+        </article>
+
+        <article>
+            <h2>Flatland</h2>
+            <p>Author: Edwin A. Abbott</p>
+            <p>Year: 1884</p>
+        </article>
+
+        <article>
+            <h2> Gödel, Escher, Bach: An Eternal Golden Braid</h2>
+            <p>Author: Douglas Hofstadter</p>
+            <p>Year: 1979</p>
+        </article>
+
+        <article>
+            <h2>How Not to Be Wrong: The Power of Mathematical Thinking</h2>
+            <p>Author: Jordan Ellenberg</p>
+            <p>Year: 2014</p>
+        </article>
+
+        <article>
+            <h2>The Joy of x</h2>
+            <p>Author: Steven Strogatz</p>
+            <p>Year: 2012</p>
+        </article>
+
+        <article>
+            <h2>Fermat's Enigma: The Epic Quest to Solve the World's Greatest Mathematical Problem</h2>
+            <p>Author: Simon Singh</p>
+            <p>Year: 1997</p>
+        </article>
+
+        <article>
+            <h2>The Princeton Companion to Mathematics</h2>
+            <p>Author: Timothy Gowers (Editor)</p>
+            <p>Year: 2008</p>
+        </article>
+
+        <article>
+            <h2>Mathematics: From the Birth of Numbers</h2>
+            <p>Author: Jan Gullberg</p>
+            <p>Year: 1997</p>
+        </article>
+<article>
+            <h2>The Lord of the Rings Trilogy</h2>
+            <p>Author: J.R.R. Tolkien</p>
+            <p>Years: 1954-1955</p>
+        </article>
+
+        <article>
+            <h2>Jane Eyre</h2>
+            <p>Author: Charlotte Brontë</p>
+            <p>Year: 1847</p>
+        </article>
+
+        <article>
+            <h2>Pride and Prejudice</h2>
+            <p>Author: Jane Austen</p>
+            <p>Year: 1813</p>
+        </article>
+
+        <article>
+            <h2>One Hundred Years of Solitude</h2>
+            <p>Author: Gabriel García Márquez</p>
+            <p>Year: 1967</p>
+        </article>
+
+        <article>
+            <h2>The Handmaid's Tale</h2>
+            <p>Author: Margaret Atwood</p>
+            <p>Year: 1985</p>
+        </article>
+
+        <article>
+            <h2>Beloved</h2>
+            <p>Author: Toni Morrison</p>
+            <p>Year: 1987</p>
+        </article>
+
+        <article>
+            <h2>The God of Small Things</h2>
+            <p>Author: Arundhati Roy</p>
+            <p>Year: 1997</p>
+        </article>
+
+        <article>
+            <h2>The Time Traveler's Wife</h2>
+            <p>Author: Audrey Niffenegger</p>
+            <p>Year: 2003</p>
+        </article>
+
+        <article>
+            <h2>The Book Thief</h2>
+            <p>Author: Markus Zusak</p>
+            <p>Year: 2005</p>
+        </article>
+
+        <article>
+            <h2>All the Light We Cannot See</h2>
+            <p>Author: Anthony Doerr</p>
+            <p>Year: 2014</p>
+        </article>
+<article>
+            <h2>The Elegant Universe</h2>
+            <p>Author: Brian Greene</p>
+            <p>Year: 1999</p>
+        </article>
+
+        <article>
+            <h2>A Brief History of Time</h2>
+            <p>Author: Stephen Hawking</p>
+            <p>Year: 1988</p>
+        </article>
+
+        <article>
+            <h2>The Feynman Lectures on Physics</h2>
+            <p>Author: Richard P. Feynman</p>
+            <p>Year: 1964</p>
+        </article>
+
+        <article>
+            <h2>Quantum Mechanics and Path Integrals</h2>
+            <p>Author: Richard P. Feynman</p>
+            <p>Year: 1942</p>
+        </article>
+
+        <article>
+            <h2>Seven Brief Lessons on Physics</h2>
+            <p>Author: Carlo Rovelli</p>
+            <p>Year: 2014</p>
+        </article>
+<article>
+            <h2>Chemistry: The Central Science</h2>
+            <p>Author: Theodore L. Brown, H. Eugene LeMay Jr., Bruce E. Bursten</p>
+            <p>Year: 1980</p>
+        </article>
+
+        <article>
+            <h2>Organic Chemistry</h2>
+            <p>Author: Paula Yurkanis Bruice</p>
+            <p>Year: 2016</p>
+        </article>
+
+        <article>
+            <h2>Inorganic Chemistry</h2>
+            <p>Author: Gary L. Miessler, Paul J. Fischer, Donald A. Tarr</p>
+            <p>Year: 2014</p>
+        </article>
+<article>
+            <h2>The Lord of the Rings Trilogy</h2>
+            <p>Author: J.R.R. Tolkien</p>
+            <p>Years: 1954-1955</p>
+        </article>
+
+        <article>
+            <h2>Jane Eyre</h2>
+            <p>Author: Charlotte Brontë</p>
+            <p>Year: 1847</p>
+        </article>
+
+        <article>
+            <h2>Pride and Prejudice</h2>
+            <p>Author: Jane Austen</p>
+            <p>Year: 1813</p>
+        </article>
+
+        <article>
+            <h2>One Hundred Years of Solitude</h2>
+            <p>Author: Gabriel García Márquez</p>
+            <p>Year: 1967</p>
+        </article>
+
+        <article>
+            <h2>The Handmaid's Tale</h2>
+            <p>Author: Margaret Atwood</p>
+            <p>Year: 1985</p>
+        </article>
+
+        <article>
+            <h2>Beloved</h2>
+            <p>Author: Toni Morrison</p>
+            <p>Year: 1987</p>
+        </article>
+
+        <article>
+            <h2>The God of Small Things</h2>
+            <p>Author: Arundhati Roy</p>
+            <p>Year: 1997</p>
+        </article>
+
+        <article>
+            <h2>The Time Traveler's Wife</h2>
+            <p>Author: Audrey Niffenegger</p>
+            <p>Year: 2003</p>
+        </article>
+
+        <article>
+            <h2>The Book Thief</h2>
+            <p>Author: Markus Zusak</p>
+            <p>Year: 2005</p>
+        </article>
+
+        <article>
+            <h2>All the Light We Cannot See</h2>
+            <p>Author: Anthony Doerr</p>
+            <p>Year: 2014</p>
+        </article>
+<article>
+            <h2>Our Bodies, Ourselves</h2>
+            <p>Author: Boston Women's Health Book Collective</p>
+            <p>Year: 1970</p>
+        </article>
+
+        <article>
+            <h2>The Joy of Sex</h2>
+            <p>Author: Alex Comfort</p>
+            <p>Year: 1972</p>
+        </article>
+
+        <article>
+            <h2>Sexuality Education</h2>
+            <p>Author: Planned Parenthood</p>
+            <p>Year: Various editions</p>
+        </article>
+
+        <article>
+            <h2>It's Perfectly Normal</h2>
+            <p>Author: Robie H. Harris</p>
+            <p>Year: 1994</p>
+        </article>
+
+        <article>
+            <h2>Guide to Getting It On!</h2>
+            <p>Author: Paul Joannides</p>
+            <p>Year: 1996</p>
+        </article>
+<article>
+            <h2>మొక్షగుండం (Mokshagundam)</h2>
+            <p>Author: విశ్వనాధ (Vishwanad)</p>
+            <p>Year: 1958</p>
+        </article>
+
+        <article>
+            <h2>మైదానం (Maidanam)</h2>
+            <p>Author: కథానాయకుడు (Kathanayakudu)</p>
+            <p>Year: 1985</p>
+        </article>
+
+        <article>
+            <h2>ఆమె అద్భుతమైన ముద్ర (Aame Adbhutamaina Mudra)</h2>
+            <p>Author: యంగ్ (Yandamoori)</p>
+            <p>Year: 1996</p>
+        </article>
+
+        <article>
+            <h2>తెలుగు సాహిత్య చరిత్ర (Telugu Sahitya Charitra)</h2>
+            <p>Author: జంప (Jamp)</p>
+            <p>Year: 2000</p>
+        </article>
+<article>
+            <h2>Rigveda</h2>
+            <p>Author: Ancient Indian Rishis</p>
+            <p>Year: Estimated to be composed around 1500–1200 BCE</p>
+        </article>
+
+        <article>
+            <h2>Upanishads</h2>
+            <p>Author: Various ancient philosophers</p>
+            <p>Year: Varies (around 800–200 BCE)</p>
+        </article>
+
+        <article>
+            <h2>Panini's Ashtadhyayi</h2>
+            <p>Author: Panini</p>
+            <p>Year: Estimated to be around 4th century BCE</p>
+        </article>
+
+        <article>
+            <h2>Kalidasa's Works</h2>
+            <p>Author: Kalidasa</p>
+            <p>Year: Estimated to be around 4th–5th century CE</p>
+        </article>
+
+        <article>
+            <h2>Ashtanga Hridaya</h2>
+            <p>Author: Vagbhata</p>
+            <p>Year: Estimated to be around 6th century CE</p>
+        </article>
+<article>
+            <h2>The Lord of the Rings Trilogy</h2>
+            <p>Author: J.R.R. Tolkien</p>
+            <p>Years: 1954-1955</p>
+        </article>
+
+        <article>
+            <h2>Jane Eyre</h2>
+            <p>Author: Charlotte Brontë</p>
+            <p>Year: 1847</p>
+        </article>
+
+        <article>
+            <h2>Pride and Prejudice</h2>
+            <p>Author: Jane Austen</p>
+            <p>Year: 1813</p>
+        </article>
+
+        <article>
+            <h2>One Hundred Years of Solitude</h2>
+            <p>Author: Gabriel García Márquez</p>
+            <p>Year: 1967</p>
+        </article>
+
+        <article>
+            <h2>The Handmaid's Tale</h2>
+            <p>Author: Margaret Atwood</p>
+            <p>Year: 1985</p>
+        </article>
+
+        <article>
+            <h2>Beloved</h2>
+            <p>Author: Toni Morrison</p>
+            <p>Year: 1987</p>
+        </article>
+
+        <article>
+            <h2>The God of Small Things</h2>
+            <p>Author: Arundhati Roy</p>
+            <p>Year: 1997</p>
+        </article>
+
+        <article>
+            <h2>The Time Traveler's Wife</h2>
+            <p>Author: Audrey Niffenegger</p>
+            <p>Year: 2003</p>
+        </article>
+
+        <article>
+            <h2>The Book Thief</h2>
+            <p>Author: Markus Zusak</p>
+            <p>Year: 2005</p>
+        </article>
+
+        <article>
+            <h2>All the Light We Cannot See</h2>
+            <p>Author: Anthony Doerr</p>
+            <p>Year: 2014</p>
+        </article>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Library Catalog. All rights reserved.</p>
+    </footer>
+	<script>
+	  
+            // JavaScript for functionality
+            $(document).ready(function () {
+                // Filter books by category
+                $("#filter-category").on("change", function () {
+                    var selectedCategory = $(this).val();
+                    if (selectedCategory === "all") {
+                        $(".book-item").show();
+                    } else {
+                        $(".book-item").hide();
+                        $(".book-item[data-category='" + selectedCategory + "']").show();
+                    }
+                });
+
+                // Toggle additional information
+                $(".book-item").on("click", function () {
+                    $(this).find(".additional-info").toggle();
+                });
+            });
+			  $(document).ready(function () {
+                // Filter books by category
+                $("#filter-category").on("change", function () {
+                    var selectedCategory = $(this).val();
+                    if (selectedCategory === "all") {
+                        $(".book-item").show();
+                    } else {
+                        $(".book-item").hide();
+                        $(".book-item[data-category='" + selectedCategory + "']").show();
+                    }
+                });
+
+                // Toggle additional information
+                $(".book-item").on("click", function () {
+                    $(this).find(".additional-info").toggle();
+                });
+
+                // Search functionality
+                $("#search-bar").on("input", function () {
+                    var searchTerm = $(this).val().toLowerCase();
+                    $(".book-item").hide();
+                    $(".book-item:contains('" + searchTerm + "')").show();
+                });
+            });
+
+            // Custom jQuery contains selector case insensitive
+            jQuery.expr[':'].contains = function (a, i, m) {
+                return jQuery(a).text().toLowerCase().indexOf(m[3].toLowerCase()) >= 0;
+            };
+        
+	</script>
+</body>
+</html>
